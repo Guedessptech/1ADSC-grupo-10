@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
- Quantidade de Obras grandes: <input id="input_grandes"><br>
- Quantidade de Obras pequenas: <input id="input_pequenas"><br>
- Quantidade de Obras médias: <input id="input_medias"><br>
+    Quantidade de Obras pequenas: <input id="input_pequenas"><br>
+    Quantidade de Obras médias: <input id="input_medias"><br>
+    Quantidade de Obras grandes: <input id="input_grandes"><br>
  Tempo médio da duraçao da conservaçao: <input id="input_tempo">
  <button onclick="calcular()">Calcular</button>
  <div id="div_museu"></div>
@@ -18,9 +18,9 @@
 <script> 
 
     function calcular() {
-        var qtdGrandes = Number(input_grandes.value) * 20000;
+        var qtdPequenas = Number(input_pequenas.value) * 2000;
         var qtdMedias = Number(input_medias.value) * 3000;
-        var qtdPequenas = Number(input_pequenas.value) * 1000;
+        var qtdGrandes = Number(input_grandes.value) * 20000;
         var tempo = Number(input_tempo.value);
 
         var total = qtdGrandes + qtdMedias + qtdPequenas;
